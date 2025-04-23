@@ -1,0 +1,96 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f5;
+  width: 350px;
+}
+
+.popup-container {
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #111827;
+  text-align: center;
+}
+
+.save-button {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.save-button:disabled {
+  background-color: #6ee7b7;
+  cursor: not-allowed;
+}
+
+.session-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 16px;
+  padding: 12px 14px;
+}
+
+.session-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.tab-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  margin: 6px 0;
+}
+
+.tab-item a {
+  color: #2563eb;
+  text-decoration: underline;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  margin-right: 8px;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 2px 4px;
+}
+
+.delete-button {
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 6px 8px;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: #fee2e2;
+}
