@@ -151,7 +151,6 @@ const App = () => {
     <div className="tabzen-container">
       <header className="tabzen-header">
         <div className="logo-container">
-          <span className="logo">🧠</span>
           <h1 className="app-title">Tabzen</h1>
         </div>
 
@@ -242,39 +241,35 @@ const App = () => {
                   </ul>
                   
                   <div className="session-actions">
-                    <button 
-                      className="action-button restore-button" 
+                    <button
+                      className="action-button restore-button"
                       onClick={() => restoreSession(index)}
                       title="Open all tabs from this session"
                     >
-                      <span className="button-icon">↗️</span>
                       <span>Restore</span>
                     </button>
-                    <button 
-                      className="action-button close-all-button" 
+                    <button
+                      className="action-button close-all-button"
                       onClick={() => closeAllTabs(index)}
                       title="Close all tabs from this session"
                     >
-                      <span className="button-icon">🚪</span>
                       <span>Close All</span>
                     </button>
-                    <button 
-                      className="action-button rename-button" 
+                    <button
+                      className="action-button rename-button"
                       onClick={() => {
                         const newName = prompt("Enter new name:", session.name);
                         if (newName) renameSession(index, newName);
                       }}
                       title="Rename this session"
                     >
-                      <span className="button-icon">✏️</span>
                       <span>Rename</span>
                     </button>
-                    <button 
-                      className="action-button delete-button" 
+                    <button
+                      className="action-button delete-button"
                       onClick={() => deleteSession(index)}
                       title="Delete this session"
                     >
-                      <span className="button-icon">🗑️</span>
                       <span>Delete</span>
                     </button>
                   </div>

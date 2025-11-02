@@ -51,9 +51,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === "restore-session") {
     const tabs = message.tabs;
     if (tabs && tabs.length > 0) {
-      // Open first tab and then the rest to avoid popup blocking
       chrome.tabs.create({ url: tabs[0].url }, () => {
-        // Open the rest of the tabs
         for (let i = 1; i < tabs.length; i++) {
           chrome.tabs.create({ url: tabs[i].url });
         }
